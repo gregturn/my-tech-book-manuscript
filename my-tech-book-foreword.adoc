@@ -1,0 +1,19 @@
+[#my-tech-book-foreword]
+== Foreword
+
+ifdef::backend-pdf[]
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+endif::[]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fringilla ex. Curabitur ornare ac lorem ac ullamcorper. Suspendisse blandit accumsan risus a consequat. Quisque sagittis cursus lacus. Curabitur fermentum volutpat malesuada. Aliquam sagittis ex at dolor tincidunt, eu ultrices nisl iaculis. Donec cursus, metus et aliquam pulvinar, mauris quam dignissim dolor, ullamcorper tristique leo elit quis augue. Etiam ultricies ante vitae enim molestie eleifend. Maecenas volutpat ante et ligula ornare mattis. Nam id luctus felis, at faucibus mi. Suspendisse eget erat sem. Aliquam orci elit, vestibulum eu aliquet non, commodo ut urna. Quisque fermentum magna sit amet eros interdum egestas. Mauris ullamcorper rhoncus neque, at consectetur turpis sollicitudin et. Duis semper quam felis, eu imperdiet sapien ultrices non.
+
+Etiam quam dolor, gravida ac tincidunt nec, facilisis eu nunc. Maecenas porta fringilla metus, vitae finibus enim blandit vel. Pellentesque cursus orci eu eros fermentum, non pellentesque leo suscipit. Vivamus eleifend neque nec interdum finibus. Nullam in ante vel urna gravida venenatis at eget augue. Sed tempor quis arcu sed tempus. Suspendisse in felis ultricies, ornare mi et, tempor tortor. Pellentesque quis quam risus. Duis laoreet convallis mollis.
+
+Phasellus pretium ultricies eros quis lacinia. Cras tempus aliquet tellus, id lacinia enim rutrum ac. Nunc consectetur at tortor quis lobortis. Donec dui mauris, venenatis sit amet tellus ac, tempor dictum lectus. Ut dui mauris, tempus et maximus et, blandit non risus. Donec sed lacus non ante ultrices maximus in vel metus. Phasellus nisi lorem, porttitor eu massa sit amet, vehicula dictum lectus. Phasellus ornare felis massa. Nam eu iaculis libero.
+
+-- *Person of technical repute that is willing to write this* +
+_Their preferred title_
+

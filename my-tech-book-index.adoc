@@ -1,0 +1,64 @@
+ifdef::review-copy[]
+= My Technical Book (REVIEW COPY)
+endif::[]
+ifndef::review-copy[]
+= My Technical Book
+endif::[]
+:author: Your Name
+:creator: {author}
+:keywords: put, some, careful, thought, to, this
+:copyright: (C) 2020 Your Name, All Rights Reserved
+:toc: right
+:toclevels: 6
+:doctype: book
+ifdef::ebook-format[]
+//:front-cover-image: image:images/youre-ebook-cover.jpeg[Front Cover,1050,1600]
+:leveloffset: -1
+endif::[]
+ifdef::backend-pdf[]
+:toc: macro
+:pdf-page-size: 7.5in x 9.25in
+:text-align: left
+:media: prepress
+:icons: font
+:icon-set: fas
+endif::[]
+:emdash: &#8212;&#8203;
+
+ifdef::review-copy[]
+include::my-tech-book-review.adoc[]
+<<<
+endif::[]
+include::my-tech-book-copyright.adoc[]
+<<<
+include::my-tech-book-credits.adoc[]
+<<<
+include::my-tech-book-dedication.adoc[]
+<<<
+include::my-tech-book-foreword.adoc[]
+<<<
+include::my-tech-book-about.adoc[]
+<<<
+
+ifdef::backend-pdf[]
+toc::[]
+endif::[]
+
+include::my-tech-book-preface.adoc[]
+<<<
+include::my-tech-book-01.adoc[]
+<<<
+include::my-tech-book-02.adoc[]
+<<<
+include::my-tech-book-03.adoc[]
+<<<
+include::my-tech-book-backmatter.adoc[]
+ifdef::review-copy[]
+include::my-tech-book-thanks.adoc[]
+<<<
+endif::[]
+ifdef::backend-pdf[]
+include::my-tech-book-appendix.adoc[]
+<<<
+endif::[]
+

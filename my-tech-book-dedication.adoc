@@ -1,0 +1,21 @@
+[#my-tech-book-dedication]
+ifdef::ebook-format[]
+== Dedication
+endif::[]
+ifdef::backend-pdf[]
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+endif::[]
+
+[.text-center%hardbreaks]
+[.small]#_Write something nice here_#
+
+ifdef::review-copy[]
+[.text-center%hardbreaks]
+*THIS IS A REVIEW COPY NOT FOR SALE OR DISTRIBUTION TO OTHERS*
+endif::[]
+

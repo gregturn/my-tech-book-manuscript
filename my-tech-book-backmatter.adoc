@@ -1,0 +1,43 @@
+[#my-tech-book-backmatter]
+== About the Author
+
+ifdef::backend-pdf[]
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+endif::[]
+
+*Your name* works on the lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fringilla ex. Curabitur ornare ac lorem ac ullamcorper. Suspendisse blandit accumsan risus a consequat. Quisque sagittis cursus lacus. Curabitur fermentum volutpat malesuada. Aliquam sagittis ex at dolor tincidunt, eu ultrices nisl iaculis. Donec cursus, metus et aliquam pulvinar, mauris quam dignissim dolor, ullamcorper tristique leo elit quis augue. 
+
+ifdef::backend-pdf[]
+Signup at *yoursite.com/my-tech-book-fan* and catch all of Your's future works. You'll get a free technical handout as a bonus!
+endif::[]
+ifndef::backend-pdf[]
+Catch all of Your's future works, by http://yoursite.com/my-tech-book-fan[signing up to his newsletter]. Get a FREE technical handout as a bonus!
+endif::[]
+
+ifdef::backend-pdf[]
+Follow him on Twitter @lorum.
+endif::[]
+
+ifndef::backend-pdf[]
+Follow him on Twitter *@lorum*.
+endif::[]
+
+Also enjoy his other published works, technical as well as fiction:
+
+ifdef::backend-pdf[]
+[.text-center%hardbreaks]
+*Technical*
+_Other Book 2_
+_Other Book 1_
+_First Book_
+endif::[]
+
+ifndef::backend-pdf[]
+Technical::
+https://books2read.com/link1[_Other Book 2_] +
+https://books2read.com/link2[_Other Book 1_] +
+https://books2read.com/link3[_First Book_] +
+endif::[]

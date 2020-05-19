@@ -1,0 +1,69 @@
+extends: default
+title-page:
+  logo:
+    image: image:images/youre-ebook-cover.jpeg[]
+    top: 50%
+  title:
+    top: 25%
+page:
+  margin: [1.0in, 0.75in, 1.0in, 1.0in]
+  margin-inner: 1.0in
+  margin-outer: 0.75in
+header:
+  border_color: DDDDDD
+  height: 0.8125in
+  line-height: -3
+  vertical-align: middle
+  recto:
+    right:
+      content: '_{section-title}_'
+  verso:
+    left:
+      content: '_{section-title}_'
+footer:
+  height: 0.625in
+code:
+  font_family: Fira Code
+  font_size: ceil($base_font_size * 0.65)
+literal:
+  font_family: Fira Code
+heading:
+  h2-font-size: 42
+  h2-align: right
+  h3-font-size: 28
+  h3-align: right
+font:
+  catalog:
+    EBGaramond:
+      normal: ebgaramond-normal.ttf
+      italic: ebgaramond-italic.ttf
+      bold: ebgaramond-bold.ttf
+      bold_italic: ebgaramond-bold_italic.ttf
+    Adobe Caslon Pro:
+      normal: adobe-caslon-pro-regular.ttf
+      italic: adobe-caslon-pro-italic.ttf
+      bold: adobe-caslon-pro-bold.ttf
+      bold_italic: adobe-caslon-pro-bold_italic.ttf
+    Libre Caslon Text:
+      normal: LibreCaslonText-Regular.ttf
+      italic: LibreCaslonText-Italic.ttf
+      bold: LibreCaslonText-Bold.ttf
+      bold_italic: LibreCaslonText-Italic.ttf
+    Noto Serif:
+      normal: GEM_FONTS_DIR/notoserif-regular-subset.ttf
+      bold: GEM_FONTS_DIR/notoserif-bold-subset.ttf
+      italic: GEM_FONTS_DIR/notoserif-italic-subset.ttf
+      bold_italic: GEM_FONTS_DIR/notoserif-bold_italic-subset.ttf
+    Fira Code:
+      normal: FiraCode-Regular.ttf
+      bold: FiraCode-SemiBold.ttf
+      italic: FiraCode-Medium.ttf
+      bold_italic: FiraCode-Medium.ttf
+    # M+ 1mn supports ASCII and the circled numbers used for conums
+    M+ 1mn:
+      normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
+      bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
+      italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
+      bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
+  fallbacks: 
+  - M+ 1mn

@@ -1,0 +1,31 @@
+== My Tech Book
+
+This project is a template for standing up and publishing your own e-book/paperback.
+
+It contains the materials to generate:
+
+* E-Book publishable on Apple Books, B&N, Kobo, Google, and just about anywhere else, because EVERYONE accepts .EPUB files.
+* E-Book publishable on Amazon, because Amazon acepts .MOBI files.
+* Paperback with alternating left/right pages, suitable for Amazon or whomever.
+
+The quickest way to test if you have everything you need is to do the following steps:
+
+* `git clone git@github.com:gregturn/my-tech-book-manuscript.git`
+* `mkdir my-tech-book-code`
+* `cd my-tech-book-manuscript`
+* If you don't have it, install `rbenv` (macOS: `brew install rbenv`, see https://github.com/rbenv/rbenv#installation for more details)
+* After `rbenv` is installed, run `gem install bundler`
+* `bundle install`
+
+This should install all the tools you need. You can now use either the `guard` command `bundle exec guard` to continuously generate HTML files.
+
+Or you can build the final product using `./doc index`.
+
+The `bundle exec guard` command will launch a background daemon that watches for file changes. Open the manuscript in your favorite editor (Sublime 3 perhaps?) and do a "Save All" and you should see a set of HTML files rendered that you can view with your browser.
+
+[IMPORTANT]
+====
+As a bonus, the `guard` command uses http://livereload.com/[LiveReload].
+
+Find the http://livereload.com/extensions/[right plugin for your browser]. Once loaded, it makes it easy to submit changes, have `guard` automatically generate the HTML, and watch your browser refresh the page.
+====

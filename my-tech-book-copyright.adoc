@@ -1,0 +1,33 @@
+[#my-tech-book-copyright]
+ifdef::ebook-format[]
+== Copyright
+endif::[]
+
+[.big]#*My Tech Book:* + 
+_Subtitle goes here (or just cut it)_#
+
+(C) 2020 Your Name
+
+[.small]#All rights reserved. No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, without the prior written permission of the publisher, except in the case of brief quotations embedded in critical articles or reviews.#
+
+[.small]#Every effort has been made in the preparation of this book to ensure the accuracy of the information presented. However, the information contained in this book is sold without warranty, either express or implied. Neither the author, nor its dealers and distributors will be held liable for any damages caused or alleged to be caused directly or indirectly by this book.#
+
+[.small]#All opinions stated are the author's and do not necessarily reflect those of blah blah blah or any other entity. Any usage of blah blah blah do your own legal research blah blah or any other entity is completely unaffiliated with its owners. Any excerpts and usages thereof are strictly in the spirit of "fair use."#
+
+[.small]#Certain outputs have been edited to fit the format of this book. Nothing of critical value has been left out on purpose.#
+
+[.small]#All rendering and typesetting performed by Asciidoctor, Asciidoctor PDF, and Asciidoctor EPUB3. Fonts include `Noto Serif` for prose and `Fira Code` for code. Special thanks to Dan Allen and the Asciidoctor community for their support in making this book possible.#
+
+[.small]#Published: May 2020#
+
+[.small]#Your Name +
+P.O. Box 1234566 +
+New York, NY 12345 +
+USA#
+
+ifdef::backend-pdf[]
+[.small]#ISBN: Your ISBN
+endif::[]
+
+[.small]#`YourSite.com/my-tech-book`#
+

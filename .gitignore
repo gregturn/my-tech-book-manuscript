@@ -1,0 +1,9 @@
+*.html
+*.fodt
+*.doc
+*.docx
+*.odt
+.ruby-version
+*.epub*
+*.mobi
+my-tech-book-index/

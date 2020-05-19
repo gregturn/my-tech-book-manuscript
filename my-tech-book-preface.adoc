@@ -1,0 +1,129 @@
+:code: ../my-tech-book-code
+
+[#my-tech-book-preface]
+== Preface
+
+ifdef::backend-pdf[]
+{empty} +
+endif::[]
+
+=== What this book covers
+
+_Chapter 1, Gardening with Tulips_ - Quick description
+
+_Chapter 2, Painting with Watercolors_ - Another quick description
+
+_Chapter 3, Sailing on the River_ - You get the idea
+
+
+=== What you need for this book
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fringilla ex. Curabitur ornare ac lorem ac ullamcorper. Suspendisse blandit accumsan risus a consequat. Quisque sagittis cursus lacus. Curabitur fermentum volutpat malesuada. Aliquam sagittis ex at dolor tincidunt, eu ultrices nisl iaculis. Donec cursus, metus et aliquam pulvinar, mauris quam dignissim dolor, ullamcorper tristique leo elit quis augue. Etiam ultricies ante vitae enim molestie eleifend. Maecenas volutpat ante et ligula ornare mattis. Nam id luctus felis, at faucibus mi. Suspendisse eget erat sem. Aliquam orci elit, vestibulum eu aliquet non, commodo ut urna. Quisque fermentum magna sit amet eros interdum egesta
+
+=== Who should read this book
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fringilla ex. Curabitur ornare ac lorem ac ullamcorper. Suspendisse blandit accumsan risus a consequat. Quisque sagittis cursus lacus. Curabitur fermentum volutpat malesuada. Aliquam sagittis ex at dolor tincidunt, eu ultrices nisl iaculis. Donec cursus, metus et aliquam pulvinar, mauris quam dignissim dolor, ullamcorper tristique leo elit quis augue. Etiam ultricies ante vitae enim molestie eleifend. Maecenas volutpat ante et ligula ornare mattis. Nam id luctus felis, at faucibus mi. Suspendisse eget erat sem. Aliquam orci elit, vestibulum eu aliquet non, commodo ut urna. Quisque fermentum magna sit amet eros interdum egesta
+
+ifndef::backend-pdf[]
+=== Optimal viewing
+
+Adjust your e-reader to use a smaller font. This book is loaded with code examples. Attempting to show things too big will cause unneeded wrapping, culminating in a less than desirable experience.
+endif::[]
+
+=== Conventions
+
+In this book, you will find a number of styles of text.
+
+Code found in the text are shown like this: "A Spring WebFlux controller is flagged with an `@Controller` annotation."
+
+A block of code looks like this,
+
+.Example block of code
+====
+[source,java,tabsize=2]
+----
+@RestController
+class WebController {
+	@GetMapping("/api")
+	Mono<String> home() {
+	   return Mono.just("Hello, world!");
+	}
+}
+----
+====
+
+When certain parts of the code are described in more detail, they are annotated with a circled number at the end of the line.
+
+.Code with annotated lines
+====
+[source,java,tabsize=2]
+----
+@Component // <1>
+public class RepositoryDatabaseLoader {
+
+	@Bean // <2>
+	CommandLineRunner initialize(BlockingItemRepository repository) { // <3>
+		return args -> { // <4>
+			repository.save(new Item("Alf alarm clock", 19.99));
+			repository.save(new Item("Smurf TV tray", 24.99));
+		};
+	}
+}
+----
+<1> This comment describes the line above with the `(1)` comment.
+<2> And this is for the `(2)` line.
+<3> The `(3)` line.
+<4> The lambda expression with `(4)`.
+====
+
+Sometimes you'll see chunks of code that have comments at the end with no numbering. To improve readability in the code and in the manuscript, line breaks are sometimes forced.
+
+WARNING: Warnings appear like this.
+
+TIP: Tips appear like this.
+
+NOTE: Notes appear like this.
+
+IMPORTANT: Important facts appear like this.
+
+=== Reader feedback
+
+ifdef::backend-pdf[]
+The most valuable feedback you can leave is an honest review. 
+
+Please visit your provider when you finish and share you personal opinion of _My Tech Book_.
+
+Or visit *YourSite.com/my-tech-book-review*
+endif::[]
+ifdef::ebook-format-kf8[]
+The most valuable feedback you can leave is an honest review. 
+
+Please visit Amazon when you finish and https://www.amazon.com/review/create-review?asin=YOUR_ASSIGNED_ASIN[share you personal opinion of _My Tech Book_].
+endif::[]
+ifdef::ebook-format-epub3[]
+The most valuable feedback you can leave is an honest review. 
+
+Please visit your book provider when you finish and http://YourSite.com/my-tech-book-review[share you personal opinion of _My Tech Book_].
+endif::[]
+
+=== Support
+
+If you have issues with getting your copy, contact the provider. 
+
+If you are having issues with the code, please file a ticket at THE REPO FOR YOUR BOOK'S CODE.
+
+ifdef::backend-pdf[]
+If there is an issue with the manuscript, please email me at *me@yoursite.com*.
+endif::[]
+ifndef::backend-pdf[]
+If there is an issue with the manuscript, please email me at mailto:me@yoursite.com[me@yoursite.com].
+endif::[]
+
+=== Downloading the code
+
+You can download the example code from GitHub at THE REPO FOR YOUR BOOK'S CODE, free of charge.
+
+Are you ready? _Chapter 1, Gardening with Tulips_ is waiting!
+
+
+

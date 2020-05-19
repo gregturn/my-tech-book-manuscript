@@ -1,0 +1,63 @@
+:code: ../my-tech-book-code
+
+[#my-tech-book-03]
+ifdef::review-copy[]
+== 3 (REVIEW COPY)
+endif::[]
+ifndef::review-copy[]
+== 3
+endif::[]
+
+=== Sailing on the River
+
+ifdef::backend-pdf[]
+{empty} +
+endif::[]
+
+[verse, Edward Beckett @edwardjbeckett]
+Spring Boot FTW is a beast ;)
+
+ifdef::backend-pdf[]
+{empty} +
+endif::[]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fringilla ex. Curabitur ornare ac lorem ac ullamcorper. Suspendisse blandit accumsan risus a consequat. Quisque sagittis cursus lacus. Curabitur fermentum volutpat malesuada. Aliquam sagittis ex at dolor tincidunt, eu ultrices nisl iaculis. Donec cursus, metus et aliquam pulvinar, mauris quam dignissim dolor, ullamcorper tristique leo elit quis augue. Etiam ultricies ante vitae enim molestie eleifend. Maecenas volutpat ante et ligula ornare mattis. Nam id luctus felis, at faucibus mi. Suspendisse eget erat sem. Aliquam orci elit, vestibulum eu aliquet non, commodo ut urna. Quisque fermentum magna sit amet eros interdum egestas. Mauris ullamcorper rhoncus neque, at consectetur turpis sollicitudin et. Duis semper quam felis, eu imperdiet sapien ultrices non.
+
+Etiam quam dolor, gravida ac tincidunt nec, facilisis eu nunc. Maecenas porta fringilla metus, vitae finibus enim blandit vel. Pellentesque cursus orci eu eros fermentum, non pellentesque leo suscipit. Vivamus eleifend neque nec interdum finibus. Nullam in ante vel urna gravida venenatis at eget augue. Sed tempor quis arcu sed tempus. Suspendisse in felis ultricies, ornare mi et, tempor tortor. Pellentesque quis quam risus. Duis laoreet convallis mollis.
+
+Phasellus pretium ultricies eros quis lacinia. Cras tempus aliquet tellus, id lacinia enim rutrum ac. Nunc consectetur at tortor quis lobortis. Donec dui mauris, venenatis sit amet tellus ac, tempor dictum lectus. Ut dui mauris, tempus et maximus et, blandit non risus. Donec sed lacus non ante ultrices maximus in vel metus. Phasellus nisi lorem, porttitor eu massa sit amet, vehicula dictum lectus. Phasellus ornare felis massa. Nam eu iaculis libero.
+
+==== Summary
+
+In this chapter you:
+
+* Blah
+* Blah
+
+I hope you have enjoyed getting your feet wet with _My Tech Book_.
+
+ifdef::backend-pdf[]
+Please visit *YourSite.com/my-tech-book-review* and leave an honest review!
+endif::[]
+ifdef::ebook-format-kf8[]
+Please https://www.amazon.com/review/create-review?asin=YOUR_ASSIGNED_ASIN[visit Amazon and leave an honest review]!
+endif::[]
+ifdef::ebook-format-epub3[]
+Please http://YourSite.com/my-tech-book-review[leave an honest review]!
+endif::[]
+It's one of the biggest things you can do to help me out.(((book review, it would really help me out)))((("review, book", it would really help me out)))
+
+If you are interested in more, stay tuned. Currently in the works is _The Next Book You're Thinking About Doing_. Insert single-sentence pitch for why someone would be interested to subscribe to your list.
+
+ifdef::backend-pdf[]
+Join my email list at *YourSite.com/my-tech-book-fan* and you can keep up as that develops (and catch my technical newsletters).
+endif::[]
+ifndef::backend-pdf[]
+http://YourSite.com/my-tech-book-fan/[Join my email list] and you can keep up as that develops (and catch my technical newsletters).
+endif::[]
+I don't blog anymore, instead saving my technical writings only with those that have signed up.
+
+Thanks, +
+_Your Name_
+
+

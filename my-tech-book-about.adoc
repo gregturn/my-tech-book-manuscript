@@ -1,0 +1,14 @@
+[#my-tech-book-about]
+== About the Author
+
+ifdef::backend-pdf[]
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+endif::[]
+
+*Your name* works on the lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis fringilla ex. Curabitur ornare ac lorem ac ullamcorper. Suspendisse blandit accumsan risus a consequat. Quisque sagittis cursus lacus. Curabitur fermentum volutpat malesuada. Aliquam sagittis ex at dolor tincidunt, eu ultrices nisl iaculis. Donec cursus, metus et aliquam pulvinar, mauris quam dignissim dolor, ullamcorper tristique leo elit quis augue. 
+
+Follow on Twitter @lorum and ipsum dolor sit amet.
+

@@ -1,0 +1,93 @@
+#!/usr/bin/env bash
+
+# Uncomment the following line to debug this script
+set -x
+
+modules="1 2 3 foreword preface index"
+
+TITLE="my-tech-book"
+
+
+#
+# Turn the crank on generating chapters of your title.
+# - Will go into the folder of your chapter and prune code fragments to fit
+# - Will build both an HTML preview as well as an FODT stylized copy for Packt
+#
+build() {
+
+	# echo "Inspecting fragments in $1..."
+
+	# pushd $1
+
+	# if [ "$(echo fragment*)" != 'fragment*' ]; then # Do any fragment*'s exist?
+	# 	for i in $(ls fragment*); do
+	# 		REVISED="revised_$i"
+	# 		echo "Trimming $i into $REVISED"
+	# 		bootconsole < $i > $REVISED
+	# 	done
+	# fi;
+
+	# Convert 1 into 01, 2 into 02, but leave index, foreword, etc. alone
+	case $1 in
+    	''|*[!0-9]*) 	CHAPTER_NUMBER=$1 ;;
+    	*) 				CHAPTER_NUMBER=$(echo 00$1 | tail -c 3) ;;
+	esac
+
+	# popd
+
+	DOC="${TITLE}-${CHAPTER_NUMBER}"
+
+	echo "Building ${DOC}.html..."
+	docker run --rm -v $(pwd):/documents/ -v $(pwd)/../my-tech-book-code:/my-tech-book-code/ asciidoctor/docker-asciidoctor asciidoctor -D ${DOC} -a allow-uri-read ${DOC}.adoc
+
+	if [ "$CHAPTER_NUMBER" = "index" ]; then
+
+		echo "Building ${DOC} e-book..."
+		docker run --rm -v $(pwd):/documents/ -v $(pwd)/../my-tech-book-code:/my-tech-book-code/ asciidoctor/docker-asciidoctor asciidoctor-epub3 -D ${DOC} -a allow-uri-read -a ebook-format=kf8  ${DOC}.adoc
+		docker run --rm -v $(pwd):/documents/ -v $(pwd)/../my-tech-book-code:/my-tech-book-code/ asciidoctor/docker-asciidoctor asciidoctor-epub3 -D ${DOC} -a allow-uri-read ${DOC}.adoc
+
+		rm ${DOC}/${DOC}-kf8.epub
+
+		echo "Building ${DOC} paperback..."
+		docker run --rm -v $(pwd):/documents/ -v $(pwd)/../my-tech-book-code:/my-tech-book-code/ asciidoctor/docker-asciidoctor asciidoctor-pdf -v --trace -D ${DOC} -a allow-uri-read -a pdf-theme=paperback-theme.yml -a pdf-fontsdir="fonts" ${DOC}.adoc
+
+		echo "Flattening ${DOC}.pdf for KDP Print..."
+		cp ${DOC}/${DOC}.pdf ${DOC}/${DOC}-kdp-print.pdf
+		asciidoctor-pdf-optimize -v ${DOC}/${DOC}-kdp-print.pdf
+
+	fi;
+
+}
+
+if [ "$1" = "" ]; then
+	echo
+	echo "Usage: ./doc [all|1|2|3|foreword|preface|index]"
+	echo
+	exit
+elif [ "$1" = "all" ]; then
+	echo
+	echo "Building all chapters for My Tech Book..."
+	echo
+
+	build "foreword"
+	build "preface"
+
+	for module in $modules
+	do
+		build $module
+	done
+
+	build "index"
+
+	exit
+elif [[ $modules =~ $1 ]]; then
+	echo
+	echo "$1 is a valid member of [$modules]. Building..."
+	echo
+	build $1
+else
+	echo
+	echo "'$1' is not a recognized option. Aborting."
+	echo
+    exit 1
+fi;

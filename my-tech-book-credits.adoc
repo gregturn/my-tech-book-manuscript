@@ -1,0 +1,26 @@
+[#my-tech-book-credits]
+== Credits
+
+ifdef::backend-pdf[]
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+endif::[]
+
+Author:: 
+Your Name
+
+Foreword::
+Go find someone to do a foreword!
+
+Editor:: 
+Highly Recommend You Hire An Editor From reedsy.com
+
+Cover:: 
+It's Worth Every Nickel To Hire A Real Cover Designer
+
+Reviewers::
+Jim Bob Joe +
+Nobody In Particular
+
