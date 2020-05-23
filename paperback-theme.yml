@@ -1,4 +1,6 @@
 extends: default
+base:
+  font_color: #000000
 title-page:
   logo:
     image: image:images/youre-ebook-cover.jpeg[]
