@@ -29,3 +29,5 @@ As a bonus, the `guard` command uses http://livereload.com/[LiveReload].
 
 Find the http://livereload.com/extensions/[right plugin for your browser]. Once loaded, it makes it easy to submit changes, have `guard` automatically generate the HTML, and watch your browser refresh the page.
 ====
+
+TIP: To track my other tech efforts, visit http://greglturnquist.com/technical and sign up for FREE!
